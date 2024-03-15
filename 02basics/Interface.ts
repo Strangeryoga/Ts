@@ -30,3 +30,5 @@ getCoupon: (name: "abc10", off: 10) => {
 }
 
 stranger.email = "s@s.com"
+
+// https://www.geeksforgeeks.org/what-is-the-difference-between-interface-and-type-in-typescript/
