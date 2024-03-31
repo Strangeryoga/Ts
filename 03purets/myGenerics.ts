@@ -25,7 +25,26 @@ interface Bootle {
     type: number
 }
 
-identityFour<Bootle>({brand: "gym", type: 3})
+// identityFour<Bootle>({brand: "gym", type: 3})
+
+// Array
+function getSearchProducts<T>(products: T[]): T {
+    // do some database operations
+    const myIndex = 3
+    return products[myIndex]
+}
+
+// Arrow fnc
+const getMoreSearchProducts = <T,>(products: T[]): T => {  // this , represents that it is generics
+    // do some database operations
+    const myIndex = 4
+    return products[myIndex]
+}
+
+
+
+
+
 
 
 

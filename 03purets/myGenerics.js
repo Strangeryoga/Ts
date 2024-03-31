@@ -15,4 +15,16 @@ function identityThree(val) {
 function identityFour(val) {
     return val;
 }
-identityFour({ brand: "gym", type: 3 });
+// identityFour<Bootle>({brand: "gym", type: 3})
+// Array
+function getSearchProducts(products) {
+    // do some database operations
+    var myIndex = 3;
+    return products[myIndex];
+}
+// Arrow fnc
+var getMoreSearchProducts = function (products) {
+    // do some database operations
+    var myIndex = 4;
+    return products[myIndex];
+};
