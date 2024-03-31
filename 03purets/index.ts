@@ -13,6 +13,8 @@ class User1 {
 
     private _courseCount = 1
 
+    protected _courseCount1 = 1
+
     readonly city: string = "Mumbai"
     constructor(
         public email: string,
@@ -48,8 +50,20 @@ class User1 {
 
 }
 
-const stranger1 = new User("s@s.com", "stranger")
 
+class SubUser extends User1 {
+    isFamily: boolean = true
+    changeCourseCount() {
+        this._courseCount1 = 4
+    }
+}
+
+
+
+const stranger1 = new User1("s@s.com", "stranger")
+// stranger1.name
+
+// stranger1.deleteToken()
 
 
 
