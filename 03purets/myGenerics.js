@@ -28,3 +28,18 @@ var getMoreSearchProducts = function (products) {
     var myIndex = 4;
     return products[myIndex];
 };
+function anotherFunction(valueOne, valueTwo) {
+    return {
+        valueOne: valueOne,
+        valueTwo: valueTwo
+    };
+}
+var Sellable = /** @class */ (function () {
+    function Sellable() {
+        this.cart = [];
+    }
+    Sellable.prototype.addToCart = function (product) {
+        this.cart.push(product);
+    };
+    return Sellable;
+}());
